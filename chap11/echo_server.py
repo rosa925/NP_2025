@@ -1,7 +1,7 @@
 from socket import *
 
 port = 2500
-UFSIZE = 1024
+BUFSIZE = 1024
 
 sock = socket(AF_INET, SOCK_STREAM)
 sock.bind(('0.0.0.0', port))

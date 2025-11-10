@@ -1,7 +1,7 @@
 import socket
 
 class BroadcastClient:
-    def __init__(self, bcast_addr="<broadcast>", port=10000, bufsize=1024):
+    def __init__(self, bcast_addr="<broadcast>", port=5000, bufsize=1024):
         self.bcast_addr = bcast_addr  # 예: "<broadcast>" 또는 "192.168.0.255"
         self.port = port
         self.bufsize = bufsize
@@ -26,5 +26,5 @@ class BroadcastClient:
 
 if __name__ == "__main__":
     # 필요 시 서브넷 브로드캐스트 주소로 변경: bcast_addr="192.168.0.255"
-    client = BroadcastClient(bcast_addr="<broadcast>", port=10000)
+    client = BroadcastClient(bcast_addr='172.31.143.255', port=5000)
     client.send_loop()

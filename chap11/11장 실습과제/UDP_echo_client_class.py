@@ -1,7 +1,7 @@
 import socket
 
 class UDPClient:
-    def __init__(self, server_host='127.0.0.1', port=5000, buffer_size=1024):
+    def __init__(self, server_host='172.31.141.150', port=5000, buffer_size=1024):
         self.server_host = server_host
         self.port = port
         self.buffer_size = buffer_size
@@ -25,5 +25,5 @@ class UDPClient:
         self.sock.close()
 
 if __name__ == "__main__":
-    client = UDPClient(server_host='127.0.0.1', port=5000)
+    client = UDPClient(server_host='172.31.141.150', port=5000)
     client.start()

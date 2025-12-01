@@ -1,7 +1,7 @@
 import socket
 
 class NumberClient:
-    def __init__(self, host='127.0.0.1', port=5000):
+    def __init__(self, host='172.31.141.150', port=5000):
         self.host = host   # 서버 IP 주소 (예: '172.31.141.150')
         self.port = port
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

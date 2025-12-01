@@ -2,7 +2,7 @@
 import socket
 import threading
 
-SERVER_HOST = "127.0.0.1"  # 서버 IP
+SERVER_HOST = "172.31.141.150"  # 서버 IP
 SERVER_PORT = 2500         # 서버 포트 (서버 코드와 반드시 동일해야 함)
 
 def recv_thread(sock: socket.socket):
